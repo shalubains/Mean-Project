@@ -1,0 +1,39 @@
+<style>
+  div{
+    margin-top:10px;
+  }
+</style>
+<h1 style="text-align:center;">Create Product</h1>
+<div class="col">
+  <div class="row-md-4">
+ <input placeholder="Name" class="form-control" type="text" [(ngModel)]="name" />
+  </div>
+  <div class="row-md-4">  
+    <input placeholder="Price" class="form-control" type="number" [(ngModel)]="price" />
+  </div>
+  <div class="row-md-4">  
+    <input placeholder="Quantity" class="form-control" type="number" [(ngModel)]="quantity" />
+  </div>
+  <div class="row-md-4"> 
+    <input placeholder="Seller name" class="form-control" type="text" [(ngModel)]="seller">
+  </div>
+  <div class="row-md-4"> 
+    <input placeholder="Brand" class="form-control" type="text" [(ngModel)]="brand">
+  </div>
+  <div class="row-md-4"> 
+    <input placeholder="Category" class="form-control" type="text" [(ngModel)]="category">
+  </div>
+  <div class="row-md-4"> 
+    <input placeholder="Ratings" class="form-control" type="number" [(ngModel)]="ratings">
+  </div>
+  <div class="row-md-4"> 
+    <input placeholder="Reviews" class="form-control" type="number" [(ngModel)]="reviews">
+  </div>
+  <div class="row-md-4"> 
+    <input placeholder="Image" class="form-control" type="text" [(ngModel)]="image">
+  </div>
+  <div class="row-md-4"> 
+    <input placeholder="Description" class="form-control" type="text" [(ngModel)]="description">
+  </div>
+  <button style="margin-top:10px;margin-left:550px" class="btn btn-primary" (click)="createproduct()">Create Product</button>
+</div>

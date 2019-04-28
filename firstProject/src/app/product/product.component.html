@@ -1,0 +1,25 @@
+<!-- <div class="card" style="width: 18rem;">
+    <img src="https://card-authorization.com/wp-content/uploads/2017/02/sample-credit-card-sample-credit-card-creditcard.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}}</h5>
+      <p class="card-text">{{product.price}}</p>
+      <a href="#" class="btn btn-primary">{{product.description}}</a>
+    </div>
+  </div> -->
+
+
+
+<!-- product.js file usage -->
+<div class="card" style="width: 18rem;margin-top:10px;border:1px solid grey;margin-left:10px;" >
+  <img [src]="product.image" style="height:150px;" class="card-img-top" alt="..." (click)="productDetails()">
+  <div class="card-body">
+    <p class="card-title">ProductId : {{product.productId}}</p>
+    <h5 class="card-title">Name : {{product.name}}</h5>
+    <h5 class="card-text">Brand : {{product.brand}}</h5>
+    <p class="card-text">Price : {{product.price | discount}}</p>
+    <p class="card-text">Description : {{product.description}}</p>
+
+    <button class="btn btn-primary" [disabled]="product.disableBtn" (click)="addToCart()">Add To Cart</button>
+    <button style="margin-left:20px;" class="btn btn-primary" (click)="productDetails()"> Details </button>
+  </div>
+</div>

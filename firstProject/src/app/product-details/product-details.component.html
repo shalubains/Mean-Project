@@ -1,0 +1,21 @@
+<div *ngIf="product" class="row">
+  <div class="col-md-7" >
+    <img [src]="product.image" height="70%" width="80%"  style="margin-left:20px;border:1px solid grey;margin-top:20px;" alt="...">
+  </div>
+  <div class="col-md-5">
+    <div class="card-body">
+      <h5 class="card-title">Product Id : {{product.productId}}</h5>
+      <h5 class="card-title">Name : {{product.name}}</h5>
+      <h5 class="card-text">Brand : {{product.brand}}</h5>
+      <p class="card-text">Price : {{product.price}}</p>
+      <p class="card-text">Category : {{product.category}}</p>
+      <p class="card-text">Quantity : {{product.quantity}}</p>
+      <p class="card-text">Created Date : {{product.createdDate}}</p>
+      <p class="card-text">Ratings : {{product.ratings}}</p>
+      <p class="card-text">Reviews : {{product.reviews}}</p>
+      
+      <p class="card-text">Seller : {{product.seller}}</p>
+      <p class="card-text">Description : {{product.description}}</p>
+    </div>
+  </div>
+</div>

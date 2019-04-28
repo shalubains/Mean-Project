@@ -1,0 +1,22 @@
+<div style="text-align:center">
+  <h3>Cart Value : {{cartPrice}}</h3>
+</div>
+<div class="row" style="margin-left:10px;">
+  <div *ngFor="let item of cartItems" class="col-md-3">
+    <div class="card" style="width: 18rem;margin-top:10px;border:1px solid grey;">
+      <img [src]="item.product.image" style="height:150px;" class="card-img-top" alt="...">
+      <div class="card-body">
+        <label>ProductId : {{item.productId}}</label>
+        <br/>
+        <label>Name : {{item.product.name}}</label>
+        <br/>
+        <label>Quantity : {{item.product.quantity}}</label>
+        <br/>
+        <label>Price : {{item.product.price}}</label>
+        <br/>
+        <label style="display:none">{{item.cartId}}</label>
+        <button (click)="removeProduct(item)" class="btn btn-danger">Remove Product</button>
+      </div>
+    </div>
+  </div>
+</div>
